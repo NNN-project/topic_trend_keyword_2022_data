@@ -36,8 +36,8 @@ while True:
     time.sleep(1)
 ```
 
-4. 수집한 데이터 DB에서 추출하기   
-keyword_query에서 DB정보 입력 후 이용
+4. 수집한 데이터 DB에서 추출하기
+* keyword_query에서 DB정보 입력 후 이용
 
 ```
 pymysql.connect(host='', port=3306, user='', password='', db='', charset='utf8')
