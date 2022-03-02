@@ -21,9 +21,13 @@
 ## Usage
 1. Project Download
 2. MySQL DB와 테이블 생성
+
+
 ![데이터베이스 drawio](https://user-images.githubusercontent.com/89976847/156385448-d710c163-a232-43b5-a8bc-d0f2c33ec63b.png)
 3. collect.py 파일 실행: 매일 23:30에 데이터수집 동작
 ```
+
+
 schedule.every().day.at("23:30").do(collector)
 
 while True:
@@ -31,7 +35,7 @@ while True:
     time.sleep(1)
 ```
 
-4. 수집한 데이터 DB에서 추출하기
+4. 수집한 데이터 DB에서 추출하기   
 keyword_query에서 DB정보 입력 후 이용
 ```
 pymysql.connect(host='', port=3306, user='', password='', db='', charset='utf8')
