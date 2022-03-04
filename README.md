@@ -3,8 +3,9 @@
 네이버 뉴스, 트위터, 유튜브 API를 활용해 뉴스 토픽에서 자주 언급된 키워드와 관련된 데이터를 수집 및 정보 추출
 
 ## Getting Started
-### Dependencies
-
+### Requirements
+* OS : Windows 10
+* language : python3.8
 * 데이터베이스 모듈
   * pymysql
   * sqlalchemy
@@ -15,12 +16,12 @@
   * BeautifulSoup
 * 트위터 API사용을 위한 모듈
   * tweepy
-* apiclient.discovery 모듈설치
+* 유튜브 API사용을 위한 모듈
   * google-api-python-client
 
 ## Usage
 1. Project Download
-2. MySQL DB와 테이블 생성
+2. MySQL DB 생성
 
 
 ![데이터베이스 drawio](https://user-images.githubusercontent.com/89976847/156385448-d710c163-a232-43b5-a8bc-d0f2c33ec63b.png)
@@ -37,10 +38,10 @@ while True:
 ```
 
 4. 수집한 데이터 DB에서 추출하기
-* keyword_query에서 DB정보 입력 후 이용
+* DB연결
 
 ```
-pymysql.connect(host='', port=3306, user='', password='', db='', charset='utf8')
+engine = create_engine('{DBMS}+pymysql://{USER NAME}:{PASSWORD}@{HOST}:{PORT}/{DB}')
 ```
 
 
