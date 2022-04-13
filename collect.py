@@ -52,7 +52,7 @@ def news_keyword(data, date):
 
 def collector():
     # 엔진 설정
-    engine = create_engine('mysql+pymysql://admin:tkt202202@tkt-db-ko.cnirlhwrm55r.ap-northeast-2.rds.amazonaws.com:3306/topic_keywords_db')
+    engine = create_engine('mysql+pymysql://admin:******@tkt-db-ko.cnirlhwrm55r.ap-northeast-2.rds.amazonaws.com:3306/topic_keywords_db')
 
     # today '2022-02-26', day '22-02-26', day_str '2022-02-26T00:00:00Z'
     today = date.today()
